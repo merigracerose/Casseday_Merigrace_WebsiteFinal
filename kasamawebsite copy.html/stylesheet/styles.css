@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+table{
+    border-spacing: 0;
+}
+img{
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.centering{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    object-fit: contain;
+}
+.logosizing{
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.imgpadding{
+    padding-top: 20px;
+    background-image: url(../images/kasama\ blueprint.jpeg);
+    background-size: cover;
+    max-width: 900px;
+    height: 470px;
+    margin: 0 auto;
+    padding: 90px;
+}
+.logocenter{
+    text-align: center;
+}
+.button {
+    padding: 12px 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: center;
+}
+.nav{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 13px;
+    padding-top: 0;
+}
+
+/* COLORS */
+.lightgrey{
+    color: rgb(222, 222, 222)
+}
+
+/* COMPONENT STYLES */
+.WelcomeToKasama{
+    width: 500px;
+    max-width: 500px;
+    height: 250px;
+    background-color: white;
+}
+
+/* TEXT */
+h1 { 
+    font-family: "apolline", serif;
+    font-size: 40pt;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-family: "adobe-text-pro", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+h2 {
+    display: inline-block;
+    font-family: "apolline", serif;
+    font-size: 30pt;
+    margin-top: 25px;
+    text-align: center;
+    font-family: "adobe-text-pro", serif;
+    font-weight: 400;
+    font-style: italic;
+    padding-top: 20px;
+}
+p {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18pt;
+    padding-bottom: 15px;
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h3{
+    font-size: 30pt;
+}
+.txt-center{
+    text-align: center;
+}
+a {
+    font-size: 20pt;
+}
+.textsizemenu{
+    font-size: 18pt;
+    font-family: "adobe-garamond-pro", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.buttonfont{
+    font-family: "area-normal", sans-serif;
+    font-weight: 16pt;
+    font-style: normal;
+}
+.hoursfont{
+    font-family: "area-normal", sans-serif;
+    font-weight: 16pt;
+    font-style: normal;
+}
+.menufont{
+    font-family: "area-normal", sans-serif;
+    font-weight: 16pt;
+    font-style: normal;
+    font-size: 25pt
+}
+
+/* CONTAINER */
+.container{
+    position: relative;
+}
+.logolayout{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.ordernowbutton{
+    font-family: "adobe-text-pro", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 23pt;
+}
+
+/* INTRO KASAMA TEXT */
+.text-block{
+    position: absolute; 
+    background-color: white;
+    color: black; 
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 500px;
+    margin-left: 120px;
+    bottom: 430px;
+}
+
+/* MENU */
+.flex-basis {
+    flex-basis: 25%;
+}
+.menu{
+    max-width: 1200px;
+    padding: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(222, 222, 222);
+    padding-left: 20px;
+}
+.menuimages{
+    display: flex;
+    gap: 50px;
+    text-align: center;
+}
+.img-with-text {
+    text-align: justify;
+    width: 260px;
+}
+.txt-align-center{
+    text-align: center;
+}
+.is-inline{
+    display: inline;
+}
+.padding{
+    justify-content: center;
+    padding-top: 150px;
+}
+
+/* KITCHEN */
+.menuimg{
+    background-image: url(../images/kitchen.jpeg);
+    background-size: cover;
+    max-width: 800px;
+    height: 480px;
+    margin: 0 auto;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.whitecomponent{
+    max-width: 220px;
+    background-color: white;
+    padding: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* CLOSING */
+.closingcontacts{
+    width: auto;
+    max-width: auto;
+    height: 280px;
+    background-color: rgb(222, 222, 222);
+}
+
+    /* Animations */
+    .fade--in{
+        opacity: 0;
+    }
+    .fade--in.active{
+        animation-name: fade-in;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+    }
+    .scale--up.active.active{
+        animation-name: scale-up;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+    .rotate.active {
+        animation-name: rotate;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+
+
+    @keyframes fade-in {
+        0%{
+            opacity: 0;
+            transform: translateY(200px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes scale-up {
+        0%{
+            transform: scale(0);
+        }
+        80%{
+            transform: scale(1.2);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+    @keyframes rotate {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(1080deg);
+        }
+    }
